@@ -1,0 +1,55 @@
+.east2 img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 80vh;  
+}
+.east2 h2{
+    text-align: center;
+    color: white;
+    padding-top: 15rem;
+    font-size: 50px;
+}
+
+ /* next */
+
+
+
+.east p{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 350px;
+}
+.east1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.eas{
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.eas img{
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.eas:hover img{
+    transform: scale(1.1);
+}
+
+.eas p{
+    text-align: center;
+    font-size: 16px;
+}
+.eas span{
+    color: orange;
+}

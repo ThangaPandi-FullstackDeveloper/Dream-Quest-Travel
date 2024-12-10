@@ -1,0 +1,80 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
+.bod{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.shadow{
+  height: 630px;
+  border-radius: 50px;
+  padding: 25px;
+  transition: .5s;
+}
+/* .shadow:hover{
+  border: 5px solid #41f00c;
+} */
+.field{
+  position: relative;
+  width: 320px;
+  margin: 30px 0;
+}
+.field h2{
+  text-align: center;
+  color: #41f00c;
+}
+.field form *{
+  display: block;
+  width: 100%;
+}
+.field label{
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+}
+.field input{
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+}
+.field input:hover{
+  background-color: #41f00c;
+}
+.ton button{
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.ton button:hover{
+  background-color: #41f00c;
+}
+.area p{
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 50px;
+}
+.area p a{
+  color: #0ca2e8;
+  text-decoration: none;
+  font-size: 24px;
+}
+.videov video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+@media screen (min-width: 250px; and max-width: 950px;){
+
+}
+  

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/group.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>group</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="tour">
+        {% load static %}
+        <img src="{% static 'image/group.jpg'  %}" alt="">
+    </div>
+
+        <!-- next -->
+    <section>
+        <div class="gr">
+            <P>Dynamic Group Outings<br><br><br>Winter Wonders 2024</P>
+        </div>
+        <div class="gtn">
+    {% for winder in winder %}
+          <div class="gt">
+            <img src="{{winder.im.url}}" alt=""><br><br>
+            <p><i class="fa-solid fa-location-dot"></i> {{winder.plan}}<br>{{winder.location}}<br>
+            <span><i class="fa-regular fa-clock"></i>&nbsp {{winder.duration}}</span></p>
+            <a href="{% url 'book' %}">
+                <button>Book now</button>
+            </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{winder.price}}
+          </div> 
+    {% endfor %}
+    </section>
+
+
+      <!-- next -->
+
+      <section>
+        <div class="summ">
+            <p>Summer Groups for 2025</p>
+        </div>
+
+        <div class="summer">
+    {% for summer in summer %}
+            <div class="su">
+                <img src="{{summer.i.url}}" alt=""><br><br>
+                <p><i class="fa-solid fa-location-dot"></i>{{summer.plan}}<br>{{summer.location}}<br>
+                    <span><i class="fa-regular fa-clock"></i>&nbsp {{summer.duration}}</span></p>
+                    <a href="{% url 'book' %}">
+                        <button>Book now</button>
+                    </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{summer.price}}
+            </div>
+    {% endfor %}
+
+            
+        </div>
+      </section>
+
+        <!-- next -->
+         
+      <section>
+        <div class="res">
+            <p>Fully Reserved Exclusive Group Tours</p>
+        </div>
+
+        <div class="reserved"> 
+    {% for objects in data %}
+            <div class="re">
+                <img src="{{objects.re.url}}" alt=""><br><br>
+                <p><i class="fa-solid fa-location-dot"></i> {{objects.plan}}<br>{{objects.location}}<br>
+                    <span><i class="fa-regular fa-clock"></i>&nbsp {{objects.duration}}</span></p>
+                    <a href="{% url 'book' %}">
+                      <button>Book now</button>
+                    </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{objects.price}}
+            </div>
+    {% endfor %}
+
+            
+
+        </div>
+      </section>
+
+
+      {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

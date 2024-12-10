@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>DreamQuest Travels</title>
+</head>
+<body>
+  {% include 'nav.html' %}
+            <!-- home -->
+    <section class="home">
+
+
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'image/london1.jpg'  %}" alt="" style="width:100%">
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'image/two.avif'  %}" alt="" style="width:100%">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'image/three.avif'  %}" alt="" style="width:100%">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'image/four.avif'  %}" alt="" style="width:100%">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'image/five.avif'  %}" alt="" style="width:100%">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>  
+          </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+             
+    
+    
+             <!-- next -->
+    <section>
+    <h2>Popular Package</h2>
+    <div class="group">
+        
+          <div class="one">
+             <h3>Indian Tour Package</h3>
+            <button><a href="{% url 'indian' %}">98 Tours</a></button>
+    
+          </div>
+
+          <div class="two">
+            <h3>South Indian Tour</h3>
+            <button><a href="{% url 'south' %}">50 Tours</a></button>
+          </div>
+
+          <div class="three">
+            <h3>Europe Tour Package</h3>
+            <button><a href="{% url 'europe' %}">144 Tours</a></button>
+         
+          </div>
+
+          <div class="four">
+            <h3>Educational Tour Package</h3>
+            <button><a href="{% url 'education' %}">15 Tours</a></button>
+          </div>
+
+          <div class="five">
+            <h3>HoneyMoon Package</h3>
+            <button><a href="{% url 'honeymoon' %}">18 Tours</a></button>
+          </div>
+    </div>
+  </section>
+              <!-- next -->
+
+  <section class="mation">
+    <div class="detail">
+      <img src="{% static 'image/family1.avif'  %}" alt="">
+      <P>20,000+<br>
+         Abroad Excursions<br>
+         For the last 10 years, GT Occasions have coordinated in excess of 20,000 global agendas</P>
+     </div>
+     <div class="detail">
+      <img src="{% static 'image/location.1.avif'  %}" alt="">
+      <P>
+        High quality<br>
+        Encounters<br>
+        Every single schedule is tweaked by the flavor of the clients.
+      </P>
+     </div>
+     <div class="detail">
+      <img src="{% static 'image/traveller.jpg'  %}" alt="">
+      <p>
+        Incredibly Cheerful<br>
+        Explorers<br>
+        DreamQuest Travels Occasions holds record of extraordinary consumer loyalty and all clients are held with us.
+      </p>
+     </div>
+  </section>
+
+        <!-- next -->
+
+  <section>
+    <div class="se"><p>Welcome to DreamQuest Travels</p></div>
+    <div class="pa">
+      <p>DreamQuest Travels is a unique travel company that offers adventurous and immersive journeys tailored to the curious explorer. Unlike conventional tours, DreamQuest Travels invites you to dive deep into the culture, history, and landscapes of each destination, crafting experiences that leave you with lasting memories and new perspectives. Whether you're looking for a serene retreat in a remote corner of the world, an action-packed adventure in the wild, or an immersive cultural journey through ancient cities, DreamQuest curates every trip to be a personal journey of discovery.
+        With a dedicated team of expert travel guides, cultural liaisons, and local artisans, DreamQuest provides a seamless and enriching travel experience. Each itinerary is designed to maximize authentic encounters, allowing you to engage with local communities, taste regional flavors, and participate in cultural traditions. This approach enables travelers to connect with destinations on a deeper level, gaining insight into the lives of people, the beauty of the natural world, and the rhythm of diverse cultures.
+        DreamQuest Travels emphasizes sustainable and responsible travel, prioritizing eco-friendly accommodations and low-impact activities that benefit local economies. Each journey is crafted with the environment in mind, ensuring that travelers leave only positive impacts on the places they visit.
+        Whether your a solo traveler, part of a group, or looking for a family-friendly adventure, DreamQuest Travels offers customized packages to suit all preferences. The team’s commitment to excellence, combined with a passion for exploration, ensures that every journey is a blend of comfort, adventure, and inspiration. With DreamQuest, your travel experience becomes more than just a trip; it becomes a transformative journey that enriches your mind, body, and soul. So pack your bags, embrace the unknown, and embark on your next adventure with DreamQuest Travels.</p>
+    </div>
+  </section>
+
+       <!-- next -->
+
+       <section>
+        <div class="tre">
+          <p>Trending Tours</p>
+        </div>
+      <div class="fam">
+    {% for objects in data %}
+    <div class="ding">
+      <a href="{% url 'description' %}">
+      <img src= "{{objects.img.url}}" alt="">
+      </a>
+      <br><br>
+      <p><i class="fa-solid fa-location-dot"></i>{{objects.plan}}<br>{{objects.location}}<br>
+        <span><i class="fa-regular fa-clock"></i>&nbsp {{objects.duration}}</span></p>
+        <a href="{% url 'book' %}">
+          <button>Book now</button>
+        </a><i class="fa-solid fa-indian-rupee-sign">&nbsp{{objects.price}}</i> 
+    </div>
+    {% endfor %}
+      </div>
+       </section>
+
+      {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+.tour img{
+    width: 100%;
+    height: 80vh;
+}
+
+       /* next */
+.gr{
+    margin-top: 50px;
+    padding-left: 100px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.gtn{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.gt{
+    border: 1px solid black;
+    width: 250px;
+    height: 400px;
+    margin-left: 100px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.gt span{
+    color: orange;
+}
+.gt img{
+    width: 250px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.gt:hover img{
+    transform: scale(1.1);
+}
+
+.gt p{
+    text-align: center;
+    font-size: 16px;
+}
+
+    /* next */
+
+
+.summ  p{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.summer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.su{
+    border: 1px solid black;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.su img{
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.su:hover img{
+    transform: scale(1.1);
+}
+
+.su p{
+    text-align: center;
+    font-size: 16px;
+}
+.su span{
+    color: orange;
+}
+
+    /* next */
+
+
+    .res p{
+        margin-left: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+    .reserved{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .re{
+        border: 1px solid black;
+        width: 300px;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    .re img{
+        width: 300px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    .re:hover img{
+        transform: scale(1.1);
+    }
+    
+    .re p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .re span{
+        color: orange;
+    }

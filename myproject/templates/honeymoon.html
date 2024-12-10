@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/honymoon.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>indian group tour</title>
+    </head>
+    <body>
+    {% include 'nav.html' %}
+    
+    <div class="moon2">
+        {% load static %}
+        <img src="{% static 'image/eroupe head.avif'  %}" alt="">
+        <h2> HonyMoon Package</h2>
+    </div>
+    
+    <section>
+        <div class="moon">
+            <p>India <br><br>
+             Goa</p>
+        </div>
+    
+        <dic class="moon1">
+    {% for honeymoon in honeymoon %}
+            <div class="moo">
+                {% load static %}
+                <img src="{{honeymoon.honeymoon.url}}" alt=""><br><br>
+                <p><i class="fa-solid fa-location-dot"></i>{{honeymoon.plan}}<br>{{honeymoon.location}}<br>
+                    <span><i class="fa-regular fa-clock"></i>&nbsp {{honeymoon.duration}}</span></p>
+                    <a href="{% url 'book' %}">
+                        <button>Book now</button>
+                    </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{honeymoon.price}}
+            </div>
+    {% endfor %}
+
+      <!-- next -->
+
+      <section>
+        <div class="ker">
+            <p>Kerala</p>
+        </div>
+
+        <div class="kerala"> 
+    {% for kerala in kerala %}
+            <div class="ke">
+                <img src="{{kerala.kerala.url}}" alt=""><br><br>
+                <p><i class="fa-solid fa-location-dot"></i> {{kerala.plan}}<br>{{kerala.location}}<br>
+                    <span><i class="fa-regular fa-clock"></i>&nbsp {{kerala.duration}}</span></p>
+                    <a href="{% url 'book' %}">
+                        <button>Book now</button>
+                    </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{kerala.price}}
+            </div>
+    {% endfor %}
+        </div>
+        </section><br><br>
+
+            <!-- next -->
+     
+    <section>
+        <div class="shi">
+            <p>Shimla</p>
+        </div>
+
+    <div class="shimla"> 
+        {% for shimla in shimla %}
+                <div class="sh">
+                    <img src="{{shimla.shimla.url}}" alt=""><br><br>
+                    <p><i class="fa-solid fa-location-dot"></i> {{shimla.plan}}<br>{{shimla.location}}<br>
+                        <span><i class="fa-regular fa-clock"></i>&nbsp {{shimla.duration}}</span></p>
+                        <a href="{% url 'book' %}">
+                            <button>Book now</button>
+                        </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{shimla.price}}
+                </div>
+        {% endfor %}
+    </div>
+     </section><br><br>
+    
+        <!-- next -->
+     
+        <section>
+            <div class="man">
+                <p>Manali</p>
+            </div>
+    
+        <div class="manali"> 
+            {% for manali in manali %}
+                    <div class="ma">
+                        <img src="{{manali.manali.url}}" alt=""><br><br>
+                        <p><i class="fa-solid fa-location-dot"></i> {{manali.plan}}<br>{{manali.location}}<br>
+                            <span><i class="fa-regular fa-clock"></i>&nbsp {{manali.duration}}</span></p>
+                            <a href="{% url 'book' %}">
+                                <button>Book now</button>
+                            </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{manali.price}}
+                    </div>
+            {% endfor %}
+        </div>
+        </section><br><br>
+            
+
+                    <!-- next -->
+     
+        <section>
+            <div class="and">
+                <p>Andaman</p>
+            </div>
+    
+        <div class="anda"> 
+            {% for andaman in andaman %}
+                    <div class="an">
+                        <img src="{{andaman.andaman.url}}" alt=""><br><br>
+                        <p><i class="fa-solid fa-location-dot"></i> {{andaman.plan}}<br>{{andaman.location}}<br>
+                            <span><i class="fa-regular fa-clock"></i>&nbsp {{andaman.duration}}</span></p>
+                            <a href="{% url 'book' %}">
+                                <button>Book now</button>
+                            </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{andaman.price}}
+                    </div>
+            {% endfor %}
+        </div>
+        </section><br><br>
+            
+                    <!-- next -->
+            <section>
+                <div class="mun">
+                    <p>Munnar</p>
+                </div>
+        
+            <div class="munnar"> 
+                {% for munnar in munnar %}
+                        <div class="mu">
+                            <img src="{{munnar.munnar.url}}" alt=""><br><br>
+                            <p><i class="fa-solid fa-location-dot"></i> {{munnar.plan}}<br>{{munnar.location}}<br>
+                                <span><i class="fa-regular fa-clock"></i>&nbsp {{munnar.duration}}</span></p>
+                                <a href="{% url 'book' %}">
+                                    <button>Book now</button>
+                                </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{munnar.price}}
+                        </div>
+                {% endfor %}
+            </div>
+            </section><br><br>
+
+                        <!-- next -->
+
+            <section>
+                <div class="mun">
+                    <p>Kodaikanal</p>
+                </div>
+        
+            <div class="kanal"> 
+                {% for kodai in Kodai %}
+                        <div class="ka">
+                            <img src="{{kodai.k_img.url}}" alt=""><br><br>
+                            <p><i class="fa-solid fa-location-dot"></i> {{kodai.plan}}<br>{{kodai.location}}<br>
+                                <span><i class="fa-regular fa-clock"></i>&nbsp {{kodai.duration}}</span></p>
+                                <a href="{% url 'book' %}">
+                                    <button>Book now</button>
+                                </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{kodai.price}}
+                        </div>
+                {% endfor %}
+            </div>
+            </section><br><br>
+
+              <!-- next -->
+
+              <section>
+                <div class="mun">
+                    <p>Ooty</p>
+                </div>
+        
+            <div class="kanal"> 
+                {% for ooty in ooty %}
+                        <div class="ka">
+                            <img src="{{ooty.ooty.url}}" alt=""><br><br>
+                            <p><i class="fa-solid fa-location-dot"></i> {{ooty.plan}}<br>{{ooty.location}}<br>
+                                <span><i class="fa-regular fa-clock"></i>&nbsp {{ooty.duration}}</span></p>
+                                <a href="{% url 'book' %}">
+                                    <button>Book now</button>
+                                </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{ooty.price}}
+                        </div>
+                {% endfor %}
+            </div>
+            </section><br><br>
+
+
+
+                        <!-- next -->
+
+            <section>
+                <div class="mun">
+                    <p>INternational<br><br>Paris</p>
+                </div>
+        
+            <div class="kanal"> 
+                {% for paris in paris %}
+                        <div class="ka">
+                            <img src="{{paris.paris.url}}" alt=""><br><br>
+                            <p><i class="fa-solid fa-location-dot"></i> {{paris.plan}}<br>{{paris.location}}<br>
+                                <span><i class="fa-regular fa-clock"></i>&nbsp {{paris.duration}}</span></p>
+                                <a href="{% url 'book' %}">
+                                    <button>Book now</button>
+                                </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{paris.price}}
+                        </div>
+                {% endfor %}
+            </div>
+            </section><br><br>
+
+                        <!-- next -->
+
+                        <section>
+                            <div class="mun">
+                                <p>Italy</p>
+                            </div>
+                    
+                        <div class="kanal"> 
+                            {% for italy in italy %}
+                                    <div class="ka">
+                                        <img src="{{italy.italy.url}}" alt=""><br><br>
+                                        <p><i class="fa-solid fa-location-dot"></i> {{italy.plan}}<br>{{italy.location}}<br>
+                                            <span><i class="fa-regular fa-clock"></i>&nbsp {{italy.duration}}</span></p>
+                                            <a href="{% url 'book' %}">
+                                                <button>Book now</button>
+                                            </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{italy.price}}
+                                    </div>
+                            {% endfor %}
+                        </div>
+                        </section><br><br>
+
+        
+                        <!-- next -->
+
+                        <section>
+                            <div class="mun">
+                                <p>Tailand</p>
+                            </div>
+                    
+                        <div class="kanal"> 
+                            {% for tailand in tailand %}
+                                    <div class="ka">
+                                        <img src="{{tailand.tailand.url}}" alt=""><br><br>
+                                        <p><i class="fa-solid fa-location-dot"></i> {{tailand.plan}}<br>{{tailand.location}}<br>
+                                            <span><i class="fa-regular fa-clock"></i>&nbsp {{tailand.duration}}</span></p>
+                                            <a href="{% url 'book' %}">
+                                                <button>Book now</button>
+                                            </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{tailand.price}}
+                                    </div>
+                            {% endfor %}
+                        </div>
+                        </section><br><br>
+
+                                                <!-- next -->
+
+                        <section>
+                            <div class="mun">
+                                <p>Australia</p>
+                            </div>
+                    
+                        <div class="kanal"> 
+                            {% for australia in australia %}
+                                    <div class="ka">
+                                        <img src="{{australia.australia.url}}" alt=""><br><br>
+                                        <p><i class="fa-solid fa-location-dot"></i> {{australia.plan}}<br>{{australia.location}}<br>
+                                            <span><i class="fa-regular fa-clock"></i>&nbsp {{australia.duration}}</span></p>
+                                            <a href="{% url 'book' %}">
+                                                <button>Book now</button>
+                                            </a><i class="fa-solid fa-indian-rupee-sign"></i>&nbsp {{australia.price}}
+                                    </div>
+                            {% endfor %}
+                        </div>
+                        </section><br><br>
+
+
+    {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
